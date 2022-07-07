@@ -1,0 +1,90 @@
+
+// Archivo sass, este es el archivo principal de css pues sirve para dos cosas, la primera de ella es que permite importar toda la hoja de estilos de boostrap, y la segunda es que permite colocar los estilos personalizados. Todo el contenido de este archivo lo compila Live Sass Compiler y crea el archivo css en la carpeta donde se le haya especificado.
+
+// Importacion de la hoja de estilos scss de bootstrap, esta linea debe ser la última
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+// Estilos personalizados
+.banner{
+  background-image: url("../img/fondo-banner.jpg");
+  background-size: cover;
+  background-position: top left;
+  
+}
+
+.img-custom{
+  position:relative;
+  z-index: 1;
+}
+
+.img-custom:before{
+  position: absolute;
+  content: "";
+  left: -15px;
+  top:15px;
+  width: 100%;
+  height: 100%;
+  border: 5px solid;
+  z-index: -1;
+}
+
+.firma{
+  height: 80px;
+}
+
+
+// Cambiando un valor por defecto de las clases de boostrap, en este caso el color primary
+
+
+
+// Uso de media querys para la customizacion de tamañaños por ejemplo para cada resolucion, la verdad no se si si funcionan,pero por lo menos acá está la referencia
+@include media-breakpoint-only(xs){
+  .banner > h1{
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .banner >h2 {
+    font-size: 35px;
+  }
+}
+
+@include media-breakpoint-only(sm){
+  .banner > h1{
+    font-size: 80px;
+    line-height: 80px;
+  }
+  .banner >h2 {
+    font-size: 40px;
+  }
+}
+
+
+@include media-breakpoint-only(md){
+  .banner > h1{
+    font-size: 90px;
+    line-height: 100px;
+  }
+}
+
+
+@include media-breakpoint-only(lg){
+  .banner > h1{
+    font-size: 70px;
+    line-height: 85px;
+  }
+  .banner >h2 {
+    font-size: 40px;
+  }
+}
+
+
+
+
+
+
+
+
+
