@@ -1,6 +1,6 @@
 
 # Landing-page
-Este es un ejemplo tomado del [video base](https://www.youtube.com/watch?v=7zdFJulzXb4&list=PLnunbwZjHqMO-JII_HBf5TAzdzaBJP34w&index=15) donde se diseña el frontend de una [landing page](https://my-irobot.netlify.app) usando Boostrap. 
+Este es un ejemplo tomado del [video base](https://www.youtube.com/watch?v=7zdFJulzXb4&list=PLnunbwZjHqMO-JII_HBf5TAzdzaBJP34w&index=15) donde se diseña el frontend de una [landing page](https://my-irobot.netlify.app) usando Boostrap. El proyecto se encuentra en [este repo de github](https://github.com/linkmao/landing-page.git)
 ***
 
 
@@ -22,11 +22,12 @@ Se usa live Sass Compiler, lo cual lo que hace es tomar todo el código de Boots
 Se usa `purgecss` de manera opcional para reducir el tamaño del archivo css que genera boostrap con solo los elementos usados realmente en la web, para su comprensión se sugiere se revise en el archivo [package.json](./package.json) el script personaliazdo `purge`
 
 En la carpeta dist, esta guardada a mano aquello elementos que se suben a [Netlify](http://www.netlify.app)
-***
+
 
 ## Para proximas versiones
 Principalmente terminar de escribir el contenido real de la web
 
+***
 ### Maolink software
 Version. 1.0.0
 
